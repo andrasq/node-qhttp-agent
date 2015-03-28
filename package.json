@@ -1,6 +1,6 @@
 {
   "name": "qhttp-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "fixed, fast http.Agent",
   "license": "Apache-2.0",
   "repository": {
@@ -20,6 +20,8 @@
   },
   "keywords": [
     "Andras",
+    "quick",
+    "fast",
     "http",
     "agent"
   ],

@@ -23,12 +23,12 @@ Example
 
         var http = require('http');
         var HttpAgent = require('./http-agent');
-	var requestOptions = {
+        var requestOptions = {
             method: "GET",
             host: "google.com",
             path: "/",
             agent: new HttpAgent(),
-	};
+        };
         var req = http.request(requestOptions, function(res) {
             var body = "";
             res.on('data', function(chunk) {
@@ -41,7 +41,7 @@ Example
             });
         });
         req.write("");
-	req.end();
+        req.end();
 
 
 ## Related Work
