@@ -1,7 +1,7 @@
 qhttp-agent
 ===========
 
-Edited version of http.globalAgent from node-v0.10.29
+Edited version of http.Agent from node-v0.10.29
 
 This is a drop-in replacement for http.Agent that fixes connection reuse and
 speeds up requests by up to 50%.  All connections are opened with `keepAlive:
