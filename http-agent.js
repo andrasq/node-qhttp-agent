@@ -213,6 +213,7 @@ Agent.prototype = {
                 }
                 else {
                     clearTimeout(socket._reaper);
+                    socket._reaper = null;
                 }
                 return socket;
             }

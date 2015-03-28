@@ -20,10 +20,23 @@ sockets if socket.unref is not available, so might work with node-v0.8 too.
 `HttpAgent` is passed in as an option to `http.request` to be used in place of
 `http.globalAgent`.
 
+        HttpAgent = require('qhttp-agent');
+        var agent = new HttpAgent(options);
+
+Options
+
+- `maxSockets` - limit connections to each destination (default 5)
+- `socketIdleTimeout` - how long to hold on to an open socket before releasing it (default 2000 ms)
+- `allowHalfOpen` - allow sockets to be closed for writes but still be read (default false)
+
+http.Agent and passes all options to `net.createConnection`.  This seems odd,
+but HttpAgent emulates this behavior, so socket options can be included as
+well (eg allowHalfOpen).
+
 Example
 
         var http = require('http');
-        var HttpAgent = require('./http-agent');
+        var HttpAgent = require('qhttp-agent');
         var requestOptions = {
             method: "GET",
             host: "google.com",
