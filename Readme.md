@@ -10,6 +10,8 @@ Fixes the socket TIME_WAIT leak, fixes connection reuse, and is overall much
 faster than the one in in node-v0.10.  Uses a timeout thread to harvest idle
 sockets if socket.unref is not available, so might work with node-v0.8 too.
 
+This version is not an event emitter, and does not emit Agent events.
+
         npm install qhttp-agent
         npm test qhtt-pagent
 
