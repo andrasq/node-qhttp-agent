@@ -1,0 +1,34 @@
+{
+  "name": "qhttp-agent",
+  "version": "0.1.0",
+  "description": "fixed, fast http.Agent",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrasq/node-qhttp-agent"
+  },
+  "main": "index.js",
+  "author": {
+    "name": "Andras",
+    "url": "http://github.com/andrasq"
+  },
+  "engines": {
+    "node": ">=0.0.0"
+  },
+  "scripts": {
+    "test": "nodeunit test-http-agent.js"
+  },
+  "keywords": [
+    "Andras",
+    "http",
+    "agent"
+  ],
+  "dependencies": {
+    "qcache": ">=0.3.3"
+  },
+  "devDependencies": {
+    "aflow": "*",
+    "qhttp": ">0.0.5",
+    "node-qunit": "*"
+  }
+}
