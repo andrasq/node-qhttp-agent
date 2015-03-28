@@ -50,7 +50,7 @@ Example
 The node-v0.10.29 http.Agent only reuses a keepAlive connection if a second
 request arrives before the first finishes.  Then the second request will be
 sent on the same connection as the first, otherwise the connection is closed.
-It would be better to keep around the available socket and reuse it.
+It would be better to keep around the open socket and reuse it.
 
 Also, the http.Agent `maxSockets` option limits the number of connection per
 host:port destination, not the overall number of sockets allowed.  The default
