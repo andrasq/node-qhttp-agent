@@ -17,6 +17,8 @@ sockets if socket.unref is not available, so might work with node-v0.8 too.
 
 ## Usage
 
+### new HttpAgent( [options] )
+
 `HttpAgent` is passed in as an option to `http.request` to be used in place of
 `http.globalAgent`.
 
