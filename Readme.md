@@ -31,7 +31,7 @@ Options
 - `socketIdleTimeout` - how long to hold on to an open socket before releasing it (default 2000 ms)
 - `allowHalfOpen` - allow sockets to be closed for writes but still be read (default false)
 
-http.Agent and passes all options to `net.createConnection`.  This seems odd,
+http.Agent passes all options to `net.createConnection`.  This seems odd,
 but HttpAgent emulates this behavior, so socket options can be included as
 well (eg allowHalfOpen).
 

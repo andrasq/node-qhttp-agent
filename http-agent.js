@@ -60,7 +60,6 @@ function Agent( options ) {
     self.now = Date.now;
 }
 //util.inherits(Agent, EventEmitter);
-exports.Agent = Agent;
 
 Agent.defaultMaxSockets = 5;                    // max connections to any single url
 Agent.defaultSocketIdleTimeout = 2000;          // close socket after ~ seconds inactivity

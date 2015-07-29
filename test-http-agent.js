@@ -6,7 +6,7 @@
 'use strict';
 
 var http = require('http');
-var HttpAgent = require('./http-agent');
+var HttpAgent = require('./index');
 var HttpClient = require('qhttp/http-client');
 var aflow = require('aflow');
 
