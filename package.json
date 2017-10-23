@@ -1,6 +1,6 @@
 {
   "name": "qhttp-agent",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "fixed, fast http.Agent",
   "license": "Apache-2.0",
   "repository": {
@@ -31,6 +31,6 @@
   "devDependencies": {
     "aflow": "*",
     "qhttp": ">0.0.5",
-    "node-qunit": "*"
+    "qnit": "*"
   }
 }

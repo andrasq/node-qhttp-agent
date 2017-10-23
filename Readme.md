@@ -1,6 +1,8 @@
 qhttp-agent
 ===========
 
+## Note: this package is deprecated, use the `http.Agent` included in newer nodejs.
+
 Edited version of http.Agent from node-v0.10.29
 
 This is a drop-in replacement for http.Agent that fixes connection reuse and
